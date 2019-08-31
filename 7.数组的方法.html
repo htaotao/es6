@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        // map 
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // 数组每一项*2，放在一个新数组
+        arr.forEach(function(item, index){
+            console.log(item, index);
+        })
+
+        var newArr = arr.map(item => item * 2)
+        console.log(newArr)
+        console.log(newArr === arr)
+
+        // filter
+        var filterArr = arr.filter(function(item, index){
+            console.log(item, index);
+            // return后面写条件，符合则加入新数组中
+            return item % 2 === 0
+        })
+        console.log(filterArr);
+
+        // find
+
+        var item = arr.find(function(item, index){
+            return item > 5
+        })
+        console.log(item);
+    </script>
+</head>
+<body>
+</body>
+</html>

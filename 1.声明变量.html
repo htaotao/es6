@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        * 声明变量
+        * var
+        * let
+        *   1. 不允许重复声明
+        *   2. 不存在变量提升
+        * 常量 声明变量赋值，变量不能重新赋值
+        * const
+        * */
+        console.log(miaov);
+        var miaov = 'ketang';
+        var miaov = 123;
+        console.log(miaov);
+        console.log(leo)
+        let leo = 123;
+        // let leo = 145
+        console.log(leo)
+
+        // demo2
+        function fn(){
+//            var miaov = 'ketang';
+//            let leo = 123;
+        }
+        if(false){
+            var miaov = 'ketang';
+            let leo = 123;
+            console.log(leo)
+        }
+        console.log(miaov);
+        console.log(leo);
+
+        for(let i=0; i<3; i++){ // var 只能弹出3-3-3
+            document.addEventListener('click', function(){
+                alert(i)
+            })
+        }
+        console.log(i);
+
+        // eg: const http = require('http')
+
+        const abc = 10;
+        // abc = 20
+        console.log(abc);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

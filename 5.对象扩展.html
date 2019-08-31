@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var miaov = 10;
+        var o = {
+            // miaov: miaov
+            miaov,
+            // fn: function(){}
+            fn(){}
+        }
+        console.log(o)
+        
+        var util = (function(){
+            function add(){}
+            function isFunction(){}
+            function isArray(){}
+            return {
+                add,
+                isFunction,
+                isArray
+            }
+        })()
+        console.log(util)
+
+        // object.assign(target, [要合并的对象])
+        // target 目标对象
+
+        var o={a: 1}
+        var o1={b: 2}
+        var o2={c: 3}
+        Object.assign(o,o1,o2)
+        console.log(o);
+
+        function fn(option){
+            let defaults = {
+                a : '默认a',
+                b : '默认b',
+                c : '默认c'
+            }
+
+            Object.assign(defaults, option)
+            console.log(defaults)
+        }
+        fn({
+            a: 1,
+            // b: 2,
+            c: 3
+        })
+    </script>
+</head>
+<body>
+</body>
+</html>
